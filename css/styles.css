@@ -34,7 +34,6 @@ body {
 }
 
 .title {
-  font-family: var(--main-font);
   font-weight: 700;
   font-size: 36px;
   line-height: 1.17;
@@ -42,19 +41,18 @@ body {
   letter-spacing: 0.03em;
   color: var(--main-color);
 }
+
 /* ============= END COMPONENTS ============= */
 
-/*цвет фона подвала* #2F303A/
-/*цвет фона hero * #2F303A/
-/*цвет фона header * #ECECEC*/
-
 /*===============HEADER================*/
+.header {
+  background-color: #ececec;
+}
 .logo-dark {
   color: #000000;
 }
 
 .navigation-link {
-  font-family: var(--main-font);
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
@@ -68,8 +66,10 @@ body {
   color: var(--accent-color);
 }
 
+.current {
+  color: var(--accent-color);
+}
 .contact-link {
-  font-family: var(--main-font);
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
@@ -84,7 +84,6 @@ body {
 }
 
 .tel-link {
-  font-family: var(--main-font);
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
@@ -95,40 +94,42 @@ body {
 
 .tel-link:hover,
 .tel-link:focus {
-color: var(--accent-color);
+  color: var(--accent-color);
 }
 /*===============END HEADER================*/
 /*===============FOOTER================*/
 .footer {
-background: #2F303A;
+  background-color: #2f303a;
 }
 
 .logo-light {
-color: var(--white-color);
+  color: var(--white-color);
 }
-
+.address {
+  font-style: normal;
+}
 .contact-list-address {
-font-family: var(--main-font);
-font-weight: 400;
-font-size: 14px;
-line-height: 1.71;
-letter-spacing: 0.03em;
-color: var(--white-color);
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: var(--white-color);
 }
 
 .contact-list-link {
-font-family: var(--main-font);
-font-weight: 400;
-font-size: 14px;
-line-height: 1.71;
-letter-spacing: 0.03em;
-color: rgba(255, 255, 255, 0.6);
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: rgba(255, 255, 255, 0.6);
 }
 /*===============END FOOTER================*/
 
 /*===============HERO================*/
+.hero {
+  background-color: #2f303a;
+}
 .hero-title {
-  font-family: var(--main-font);
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
@@ -139,19 +140,24 @@ color: rgba(255, 255, 255, 0.6);
 }
 
 .hero-btn {
-  font-family: var(--main-font);
+  background-color: var(--accent-color);
   font-weight: 700;
   font-size: 16px;
   line-height: 1.88;
   letter-spacing: 0.06em;
   color: var(--white-color);
   cursor: pointer;
+  font-family: inherit;
+}
+
+.hero-btn:hover,
+.hero-btn:focus {
+  background-color: #188ce8;
 }
 /*===============END HERO================*/
 
 /*===============CHARACTERISTICS================*/
 .characteristics-suptitle {
-  font-family: var(--main-font);
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
@@ -161,7 +167,6 @@ color: rgba(255, 255, 255, 0.6);
 }
 
 .characteristics-description {
-  font-family: var(--main-font);
   font-weight: 400;
   font-size: 14px;
   line-height: 1.71;
@@ -169,45 +174,8 @@ color: rgba(255, 255, 255, 0.6);
   color: var(--secondary-color);
 }
 /*===============END CHARACTERISTICS================*/
-
-/*===============GALLERY================*/
-.gallery-list-button {
-font-family: var(--main-font);
-font-weight: 500;
-font-size: 16px;
-line-height: 1.62;
-text-align: center;
-letter-spacing: 0.03em;
-color: var(--main-color);
-cursor: pointer;
-}
-.gallery-list-button:hover,
-.gallery-list-button:focus {
-color: var(--white-color);
-}
-
-.gallery-list-title {
-font-family: var(--main-font);
-font-weight: 700;
-font-size: 18px;
-line-height: 2;
-letter-spacing: 0.06em;
-color: var(--main-color);
-}
-
-.gallery-list-decription {
-font-family: var(--main-font);
-font-weight: 400;
-font-size: 16px;
-line-height: 1.87;
-letter-spacing: 0.03em;
-color: var(--secondary-color);
-}
-/*===============END GALLERY================*/
-
 /*===============TEAM================*/
 .team-list-title {
-  font-family: var(--main-font);
   font-weight: 500;
   font-size: 16px;
   line-height: 1.19;
@@ -216,15 +184,45 @@ color: var(--secondary-color);
   color: var(--main-color);
 }
 .team-list-position {
-font-family: var(--main-font);
-font-weight: 400;
-font-size: 16px;
-line-height: 1.19;
-text-align: center;
-letter-spacing: 0.03em;
-color: var(--secondary-color;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.19;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--secondary-color);
 }
 /*===============END TEAM================*/
+/*===============GALLERY================*/
+.gallery-list-button {
+  background-color: #f5f4fa;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.62;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--main-color);
+  cursor: pointer;
+  font-family: inherit;
+}
+.gallery-list-button:hover,
+.gallery-list-button:focus {
+  background-color: var(--accent-color);
+  color: var(--white-color);
+}
 
+.gallery-list-title {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+  color: var(--main-color);
+}
 
-
+.gallery-list-decription {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.87;
+  letter-spacing: 0.03em;
+  color: var(--secondary-color);
+}
+/*===============END GALLERY================*/
