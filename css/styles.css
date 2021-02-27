@@ -45,9 +45,6 @@ body {
 /* ============= END COMPONENTS ============= */
 
 /*===============HEADER================*/
-.header {
-  background-color: #ececec;
-}
 .logo-dark {
   color: #000000;
 }
@@ -74,7 +71,7 @@ body {
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
-  color: var(--main-color);
+  color: var(--secondary-color);
   cursor: pointer;
 }
 
@@ -175,6 +172,9 @@ body {
 }
 /*===============END CHARACTERISTICS================*/
 /*===============TEAM================*/
+.team {
+  background-color: #f5f4fa;
+}
 .team-list-title {
   font-weight: 500;
   font-size: 16px;
@@ -193,7 +193,7 @@ body {
 }
 /*===============END TEAM================*/
 /*===============GALLERY================*/
-.gallery-list-button {
+.gallery-button {
   background-color: #f5f4fa;
   font-weight: 500;
   font-size: 16px;
@@ -204,8 +204,8 @@ body {
   cursor: pointer;
   font-family: inherit;
 }
-.gallery-list-button:hover,
-.gallery-list-button:focus {
+.gallery-button:hover,
+.gallery-button:focus {
   background-color: var(--accent-color);
   color: var(--white-color);
 }
